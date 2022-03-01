@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Attacker Details
 
-- Total coins available for spawning attackers is 1000.
+- Total coins available for spawning attackers is 1500.
 
 There are currently 2 types of Attacker.
 
