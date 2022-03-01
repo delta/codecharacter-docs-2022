@@ -16,7 +16,7 @@ You need to register to get started. You can register using email verification o
 
 Once you log in, you’ll see your dashboard, as shown in the image below.
 
-<img src="/img/Overview/Dashboard/dashboard.png"/>
+<img src="/codecharacter-docs-2022/img/Overview/Dashboard/dashboard.png"/>
 
 On the left there is the sidebar, with multiple of icons. Lets go one by one -
 
