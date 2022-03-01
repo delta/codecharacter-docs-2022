@@ -159,7 +159,7 @@ import TabItem from "@theme/TabItem";
   <li><code>void setTarget(Attacker attacker, Defender defender)</code>: Sets the target for Attacker(attacker) as Defender(defender). If the defender is invalid somehow, the simulator will handle that automatically and try to set the target which is at the nearest position to the Attacker </li>
   <li><code>void log(String s)</code>Given a Game object(called game), you can do <code>game.log("Log This\n")</code> and it will be shown in the renderer logs when the game is being rendered </li>
   <li><code>void clearLog()</code> </li>
-  <li><code>Map{`<`}Integer, Position{`>`} getSpawnPositions()</code> </li>
+  <li><code>List{`<`}SpawnDetail{`>`} getSpawnPositions()</code> </li>
   <li><code>Map{`<`}Integer, Integer{`>`} getPlayerSetTargets()</code> </li>
   </ul>
   </TabItem>
@@ -224,3 +224,8 @@ This class stores the attributes for `Attacker` and `Defender` . This will be us
     </ul>
   </TabItem>
 </Tabs>
+
+## SpawnDetail (Java Specific)
+
+- `int getTypeId()` : Returns the typeId of the spawn
+- `Position getPos()`: Returns the position of the spawn
