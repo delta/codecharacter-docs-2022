@@ -9,7 +9,7 @@ const config = {
   title: 'CodeCharacter Docs',
   tagline: 'CodeCharacter is cool',
   url: 'https://code.pragyan.org',
-  baseUrl: '/codecharacter-docs-2022/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/codechar_favicon.png',
