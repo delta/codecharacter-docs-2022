@@ -12,36 +12,36 @@ Let’s get started with a quick tutorial on how to get started.
 
 ## Dashboard Interface
 
-You need to register to get started. You can register using email verification or using the google or github OAuth. Once registered you can use the credentials to login to the game.
+You need to register to get started. You can register using email verification or using the Google or github OAuth. Once registered you can use the credentials to login to the game.
 
 Once you log in, you’ll see your dashboard, as shown in the image below.
 
 <img src="/img/Overview/Dashboard/dashboard.png"/>
 
-On the left there is the sidebar, with multiple of icons. Lets go one by one -
+On the left there is the sidebar, with multiple icons. Lets go through these one by one -
 
--   Code Editor - where you would be writing code in language of your choice.
+-   Code Editor - Where you will be writing code in the language of your choice.
 
--   Map Designer - You would be designing the map by putting your tower of your choice.
+-   Map Designer - Where you will be designing the map by placing the defenses of your choice.
 
--   Leadeboard - Leadeboard showing where you stand among other players, you can also initiate a match against player from the page.
+-   Leadeboard - Leadeboard shows where you stand among the other players and where you can also initiate a match against others from your tier.
 
--   Commits - This page shows the commit history of map and code which you would have saved.
+-   Commits - This page shows the commit history of map and code which you have saved.
 
--   BattleTV - Your previous matches and its result. You can also watch the watch the replay of match.
+-   BattleTV - Your previous matches and their results. You can also watch the replay of the match.
 
--   Settings - Settings of the games fonts, themes and keybindings etc.
+-   Settings - Settings of the game like the fonts, themes and keybindings etc.
 
 And on the screen you can see three partitions:
 
--   **On the left is the editor**, where you can type your code. You’ll notice on logging in, that you’re provided some default code. It doesn’t do much in terms of strategy, but it uses most of the important elements of the code API, so a quick read through it will help.
+-   **On the left is the editor**, where you can type your code. You’ll notice on logging in, you’re provided with some default code. It doesn’t do much in terms of strategy, but it uses the most important elements of the code API, so a quick glimpse at it will help.
 
--   **On the bottom right is the debug window**, it shows your compilation errors at compile time and your debug logs and errors at runtime.
+-   **On the bottom right is the debug window**, it shows your compilation errors at compile time, your debug logs and errors at runtime.
 
 -   **On the top right is the renderer window**, which actually displays your game. Use the mouse to pan around, and view your game after it’s complete.
 
 ## Forum
 
-We also have a discord forum for you to discuss or ask any of your doubts. Join [here](https://discord.gg/ePQrhrSNk5).
+We also have a discord forum where you can discuss or ask any of your doubts. Join [here](https://discord.gg/ePQrhrSNk5).
 
 _** We hope you have a good time playing CodeCharacter. **_

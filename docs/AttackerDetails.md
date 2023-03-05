@@ -6,7 +6,7 @@ sidebar_position: 6
 
 - Total coins available for spawning attackers is 1500.
 
-There are currently 2 types of Attacker.
+There are currently 3 types of Attackers.
 
 # Type 1 Attacker
 
@@ -15,6 +15,7 @@ There are currently 2 types of Attacker.
 - attackPower = 4
 - speed = 4
 - price = 2
+- ground
 
 # Type 2 Attacker
 
@@ -23,3 +24,13 @@ There are currently 2 types of Attacker.
 - attackPower = 2
 - speed = 2
 - price = 2
+- ground
+
+# Type 3 Attacker
+
+- hp = 15
+- range = 6
+- attackPower = 2
+- speed = 6
+- price = 4
+- aerial

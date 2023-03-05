@@ -16,6 +16,7 @@ There are currently 2 types of Defender.
 - range = 4
 - attackPower = 10
 - price = 25
+- ground
 
 ## Type 2 Defender
 
@@ -23,3 +24,12 @@ There are currently 2 types of Defender.
 - range = 6
 - attackPower = 20
 - price = 50
+- ground
+
+## Type 3 Defender
+
+- hp = 4
+- range = 6
+- attackPower = 5
+- price = 75
+- aerial
