@@ -8,6 +8,8 @@ sidebar_position: 6
 
 There are currently 3 types of Attackers.
 
+<img src="/img/Overview/GameRules/attackers.png" alt="tower"/>
+
 # Type 1 Attacker
 
 - hp = 10
