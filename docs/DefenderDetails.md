@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Defender Details
 
-- Total coins available for defenders is 5000.
+- Total coins available for defenders is 10000.
 
 There are currently 3 types of Defender.
 
