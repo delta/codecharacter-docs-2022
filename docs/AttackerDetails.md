@@ -8,9 +8,10 @@ sidebar_position: 6
 
 There are currently 3 types of Attackers.
 
-<img src="/img/Overview/GameRules/attackers.png" alt="tower"/>
+<img src="/img/Overview/GameRules/attackers.png" alt="attackers"/>
 
-# Punk
+# Sam
+Sam is a ground attacker who attacks the towers using explosives. The following are his stats
 
 - hp = 10
 - range = 2
@@ -19,7 +20,8 @@ There are currently 3 types of Attackers.
 - price = 2
 - ground
 
-# Cyborg
+# Ali
+Ali the cybord has a keen understanding of AI and hence have been able to evolve into having a strong resistance to AI forces. The following are its stats:
 
 - hp = 20
 - range = 4
@@ -28,7 +30,8 @@ There are currently 3 types of Attackers.
 - price = 2
 - ground
 
-# Drone
+# Vik
+Vik's drones are the only aerial attackers and can only be hit by the aerial defenses. The following are its stats:
 
 - hp = 15
 - range = 6

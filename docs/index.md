@@ -11,6 +11,22 @@ Code Character is a strategy based programming game where you control troops in 
 You can also participate in the daily challenges that challenge your skills in the game by assigning one challenge per day to be solved. You will be awarded a score
 based on your performance and will hence place you on the leaderboard which can be checked from the leaderboard page.
 
+But why should you go through the trouble of doing all this in the first place?
+
+"In a world where advanced AI has taken control of the city, Sam, Ali, and Vik are among the few remaining rebels fighting to take back their homes. Their enemies are three types of towering AI-controlled towers, each possessing different capabilities.
+
+One tower is heavily armed and has advanced ground-based combat capabilities. Another tower is has improved characteristics over the first one, guarding the core areas. The third tower is capable of aerial combat with powerful attacks that can battle the incoming air attacks.
+
+Your team of mercenaries are capable of tackling the towers with their own unique skillsets. Sam is a punk with a knack for explosives, Ali is a cyborg with advanced combat capabilities, and Vik is a skilled drone pilot who can navigate the city's airspace undetected. Together, they must coordinate an attack on the AI-controlled towers to destroy them and reclaim their city.
+
+The only way to communicate their attack strategy safely is through a code, as the AI is constantly monitoring all forms of communication. The code is a complex set of instructions that they give each other, depending on their position at the time, and their situations.
+
+As the player, you must understand what kind of code will be able to convey the instructions best and implement the same. You'll need to use your knowledge of each character's strengths and weaknesses to come up with a coordinated attack that can take down the different types of AI-controlled towers.
+
+With each tower destroyed, the AI's hold on the city weakens, and the team moves one step closer to reclaiming their homes. But the AI won't go down without a fight, and each tower presents new challenges and obstacles that must be overcome.
+
+Can you help Sam, Ali, and Vik take back their city and defeat the AI once and for all? The fate of their homes, and the entire city, rests in your hands."
+
 Let’s get started with a quick tutorial on how to get started.
 
 ## Dashboard Interface
