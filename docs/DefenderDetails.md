@@ -28,7 +28,7 @@ There are currently 3 types of Defender.
 
 ## Type 3 Defender
 
-- hp = 4
+- hp = 400
 - range = 6
 - attackPower = 5
 - price = 75
