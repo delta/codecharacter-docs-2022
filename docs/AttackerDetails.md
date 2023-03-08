@@ -10,7 +10,7 @@ There are currently 3 types of Attackers.
 
 <img src="/img/Overview/GameRules/attackers.png" alt="tower"/>
 
-# Type 1 Attacker
+# Punk
 
 - hp = 10
 - range = 2
@@ -19,7 +19,7 @@ There are currently 3 types of Attackers.
 - price = 2
 - ground
 
-# Type 2 Attacker
+# Cyborg
 
 - hp = 20
 - range = 4
@@ -28,7 +28,7 @@ There are currently 3 types of Attackers.
 - price = 2
 - ground
 
-# Type 3 Attacker
+# Drone
 
 - hp = 15
 - range = 6

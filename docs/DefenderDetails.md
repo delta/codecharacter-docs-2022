@@ -10,7 +10,7 @@ There are currently 3 types of Defender.
 
 <img src="/img/Overview/GameRules/towers.png" alt="tower"/>
 
-## Type 1 Defender
+## Common
 
 - hp = 400
 - range = 4
@@ -18,7 +18,7 @@ There are currently 3 types of Defender.
 - price = 25
 - ground
 
-## Type 2 Defender
+## Ranger
 
 - hp = 600
 - range = 6
@@ -26,7 +26,7 @@ There are currently 3 types of Defender.
 - price = 50
 - ground
 
-## Type 3 Defender
+## Aerial
 
 - hp = 400
 - range = 6
