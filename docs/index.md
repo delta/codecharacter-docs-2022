@@ -71,6 +71,6 @@ And on the screen, you can see three partitions:
 
 ## Forum
 
-We also have a Discord forum where you can discuss or ask any of your doubts. Join [here](https://discord.gg/ePQrhrSNk5).
+We also have a Discord forum where you can discuss or ask any of your doubts. Join [here](https://discord.gg/QcYMveUaGQ).
 
 _** We hope you have a good time playing CodeCharacter. **_
