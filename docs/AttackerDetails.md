@@ -48,9 +48,9 @@ Vik's drones are the only aerial attackers and can only be hit by the aerial def
 <div style={{ display: `flex`, justifyContent: `space-between` }}> 
 
 - hp = 15
-- range = 6
+- range = 4
 - attackPower = 2
-- speed = 6
+- speed = 4
 - price = 4
 - aerial
 
