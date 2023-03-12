@@ -172,6 +172,7 @@ import TabItem from "@theme/TabItem";
 - `attack_power: int`
 - `price: int`
 - `speed: int`
+- `is_aerial: int`
 
 ## DefenderType (Python Specific)
 
@@ -179,6 +180,7 @@ import TabItem from "@theme/TabItem";
 - `range: int`
 - `attack_power: int`
 - `price: int`
+- `is_aerial: int`
 
 ## Attributes (C++ and Java Specific)
 
@@ -202,6 +204,9 @@ This class stores the attributes for `Attacker` and `Defender` . This will be us
       <li>
         <code>unsigned price</code>
       </li>
+      <li>
+        <code>unsigned is_aerial</code>
+      </li>
     </ul>
   </TabItem>
   <TabItem value="Java" label="Java">
@@ -220,6 +225,9 @@ This class stores the attributes for `Attacker` and `Defender` . This will be us
       </li>
       <li>
         <code>int price</code>
+      </li>
+      <li>
+        <code>int is_aerial</code>
       </li>
     </ul>
   </TabItem>
