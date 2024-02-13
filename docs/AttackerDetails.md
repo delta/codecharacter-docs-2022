@@ -25,8 +25,8 @@ Sam is a ground attacker who attacks the towers using explosives. The following 
 
 </div>
 
-## Ali
-Ali the cybord has a keen understanding of AI and hence have been able to evolve into having a strong resistance to AI forces. The following are its stats:
+## Ash
+Ash the cybord has a keen understanding of AI and hence have been able to evolve into having a strong resistance to AI forces. The following are its stats:
 
 
 <div style={{ display: `flex`, justifyContent: `space-between` }}> 
@@ -42,8 +42,8 @@ Ali the cybord has a keen understanding of AI and hence have been able to evolve
 
 </div>
 
-## Vik
-Vik's drones are the only aerial attackers and can only be hit by the aerial defenses. The following are its stats:
+## Vig
+Vig's drones are the only aerial attackers and can only be hit by the aerial defenses. The following are its stats:
 
 <div style={{ display: `flex`, justifyContent: `space-between` }}> 
 
