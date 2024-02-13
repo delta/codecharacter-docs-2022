@@ -6,28 +6,7 @@ sidebar_position: 1
 
 ## Code Of Resistance
 
-In a post-apocalyptic world, where the remnants of humanity fight for survival against a merciless alien invasion, a group of skilled resistance fighters emerges. Among them are Ash, a resourceful scavenger with a sharp wit, Vig, a fearless sniper with unmatched precision, and Sam, a brilliant engineer who can craft ingenious gadgets from scraps.
-
-
-The aliens, known as the Xalorians, have established a powerful stronghold in the heart of the decimated city. They possess advanced technology and formidable weaponry, making them nearly invincible. The resistance fighters know that the key to defeating the aliens lies in infiltrating their stronghold and disabling their central power source.
-
-
-To communicate their plans without being intercepted by the Xalorians' advanced surveillance systems, the resistance fighters develop a unique code system. They use a combination of hand signals, encrypted messages, and secret rendezvous points scattered throughout the city. The code constantly evolves, adapting to the Xalorians' attempts to decrypt it.
-
-
-Ash, Vig, and Sam embark on daring missions, utilizing their individual skills and the power of teamwork to outsmart the alien invaders. Ash's agility and quick thinking help the team navigate dangerous terrain and evade Xalorian patrols. Vig's precision from a distance eliminates key targets and creates distractions. Sam's gadgets and inventions provide crucial advantages, whether it be disabling security systems or creating diversionary explosions.
-
-
-As the resistance fighters progress, they encounter different types of Xalorian adversaries. The "Reavers" are powerful alien warriors with enhanced strength and speed, while the "Sentries" are heavily armored drones that patrol the streets, scanning for any signs of rebellion. Each encounter presents new challenges and requires careful coordination and strategy to overcome.
-
-
-As the team gets closer to the Xalorians' central power source, the stakes get higher. The resistance fighters face deadly traps, impenetrable security measures, and unexpected twists in their journey. The Xalorians, realizing the threat the resistance poses, unleash their deadliest weapon, a colossal war machine known as the "Annihilator," capable of leveling entire city blocks with its devastating firepower.
-
-
-The final battle for humanity's survival culminates in a climactic showdown within the heart of the alien stronghold. Ash, Vig, and Sam must overcome insurmountable odds, outsmart the Xalorians' most advanced technologies, and deliver a crippling blow to their central power source. Failure means the extinction of the human race, while victory offers a glimmer of hope for a future free from alien tyranny.
-
-
-Will you join Ash, Vig, and Sam in their fight against the alien invaders? Can you decipher the code, outmaneuver the Xalorians, and lead the resistance to victory? The fate of humanity rests on your shoulders in this thrilling battle for survival.
+In a post-apocalyptic world, a group of skilled resistance fighters emerges to battle against a ruthless alien invasion. Among them are Ash, a resourceful scavenger, Vig, a fearless sniper, and Sam, a brilliant engineer. They develop a unique code system to communicate their plans and outsmart the advanced surveillance of the aliens. Together, they embark on daring missions, utilizing their individual skills to navigate dangerous terrain, eliminate key targets, and disable security systems. As they progress, they face different types of alien adversaries and encounter deadly traps. In their final push, they must face the Xalorians' strongest guards at the heart of the alien stronghold, where they must outmaneuver and outfight them to deliver a crippling blow to the central power source. The fate of humanity rests on their shoulders in this thrilling fight for survival.
 
 ## Introduction
 
@@ -67,6 +46,8 @@ On the left there is the sidebar, with multiple icons. Lets go through these one
 -   **BattleTV** - Your previous matches and their results. You can also watch the replay of the match.
     - There are two pages - Normal and PvP. View the matches of each mode separately. 
 
+-   **Stats** - Your previous matches and their Statistics, how many coins You've used or how much destruction is done by your code,
+    - all compared with the top player.
 On the top, the topbar contains three different icons that take you to different pages. These are -
 
 -   **Tutorials** - This takes you to the Tutorial mode, where you caan practice playing the game.
