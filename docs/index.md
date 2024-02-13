@@ -6,7 +6,11 @@ sidebar_position: 1
 
 ## Code Of Resistance
 
-In a post-apocalyptic world, a group of skilled resistance fighters emerges to battle against a ruthless alien invasion. Among them are Ash, a resourceful scavenger, Vig, a fearless sniper, and Sam, a brilliant engineer. They develop a unique code system to communicate their plans and outsmart the advanced surveillance of the aliens. Together, they embark on daring missions, utilizing their individual skills to navigate dangerous terrain, eliminate key targets, and disable security systems. As they progress, they face different types of alien adversaries and encounter deadly traps. In their final push, they must face the Xalorians' strongest guards at the heart of the alien stronghold, where they must outmaneuver and outfight them to deliver a crippling blow to the central power source. The fate of humanity rests on their shoulders in this thrilling fight for survival.
+In a post-apocalyptic world, a group of skilled resistance fighters emerges to battle against a ruthless alien invasion. Among them are Ash, a resourceful scavenger, Vig, a fearless sniper, and Sam, a brilliant engineer. 
+
+They develop a unique code system to communicate their plans and outsmart the advanced surveillance of the aliens. Together, they embark on daring missions, utilizing their individual skills to navigate dangerous terrain, eliminate key targets, and disable security systems. As they progress, they face different types of alien adversaries and encounter deadly traps. In their final push, they must face the Xalorians' strongest guards at the heart of the alien stronghold, where they must outmaneuver and outfight them to deliver a crippling blow to the central power source. 
+
+The fate of humanity rests on their shoulders in this thrilling fight for survival.
 
 ## Introduction
 
