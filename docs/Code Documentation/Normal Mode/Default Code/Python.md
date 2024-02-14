@@ -34,22 +34,22 @@ def run(state: State) -> Game:
     remaining_coins = state.no_of_coins_left
 
     game.log("TURN {} LOGS:\n".format(state.turn_no))
-
+    
     # Get all the attackers and defenders in the game and store it
     attackers = state.attackers
     defenders = state.defenders
-
+    
     # The function get_all_valid_spawn_positions() is a helper which will give us
     # the list of valid spawn positions in map.
     # If the position  we're spawning is not one of these, the player will be
     # penalized by deducting the spawn cost but not spawning the attacker
     all_valid_spawn_positions = get_all_valid_spawn_positions()
-
+    
     # If there's no defenders left,we can stop spawning and save up on coins,
     # which are important for boosting game score
     if len(defenders) != 0:
         for type_id in range(1,Constants.NO_OF_ATTACKER_TYPES+1):
-
+            
             # Spawn the attacker of type_id at position
             # all_valid_spawn_positions[last_spawned]
 
@@ -57,7 +57,7 @@ def run(state: State) -> Game:
             #    - Spawning at invalid position
             #    - Spawning at position where you have already spawned one attacker
             #    in the same turn
-
+             
             # We have provided helpers to check just that
 
             # game class will keep track of all your spawned positions for you and
@@ -69,11 +69,11 @@ def run(state: State) -> Game:
 
             if is_valid_spawn_position(all_valid_spawn_positions[last_spawned]) and\
                     not game.is_already_spawned_at_position(all_valid_spawn_positions[last_spawned]):
-
+                        
                 # If lets say you had run out of coins left, the game will just ignore
                 # the spawn
                 game.spawn_attacker(type_id, all_valid_spawn_positions[last_spawned])
-
+                
                 # You can use the logger we provide to show log messages in the
                 # rendered game
                 # For full information about the AttackerType class refer the
@@ -88,12 +88,16 @@ def run(state: State) -> Game:
 
                 last_spawned = last_spawned + 1
                 last_spawned = last_spawned % len(all_valid_spawn_positions)
-
+                
     #Now lets say you always want to set the target for the attackers[0] to
     #defenders[0]
     #To do that you do
     if len(attackers)!=0 and len(defenders)!=0:
         game.set_target(attackers[0].id,defenders[0].id)
+    #lets say i want to activate the ability of the first attacker
+    #check if ability wasnt activated before to avoid getting penalized
+        if attackers[0].id not in Game.already_activated_attacker_ids:
+            game.activate_ability(attackers[0].id)
 
     #Lets log all the spawned positions for this turn
     for type_id, pos in game.spawn_positions:
@@ -102,7 +106,4 @@ def run(state: State) -> Game:
 
     #always  return the game object
     return game
-
-
-
 ```
