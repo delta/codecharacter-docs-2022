@@ -131,7 +131,7 @@ import TabItem from "@theme/TabItem";
 <Tabs>
   <TabItem value="C++" label="C++" default>
   <ul>
-  <li><code> std::set<size_t> already_activated_attacker_ids</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
+  <li><code> std::set{`<`}size_t{`>`} already_activated_attacker_ids</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
   <li><code>void spawn_attacker(size_t type_id, Position pos)</code>: Spawns Attacker of type type_id at Position pos </li>
   <li><code>bool already_spawned_at_position(Position pos)</code>: Given a Position pos, it will return whether some attacker was already spawned in that position in the current turn</li>
   <li><code>void set_target(size_t attacker_id, size_t defender_id)</code>: Sets the target for Attacker with id=attacker_id as Defender with id=defender_id. If the defender_id is invalid, the simulator will handle that automatically and try to set the target which is at the nearest position to the Attacker</li>
@@ -163,7 +163,7 @@ import TabItem from "@theme/TabItem";
   <ul>
   <li><code>void spawnAttacker(int type_id, Position pos)</code>: Spawns Attacker of type type_id at Position pos </li>
   <li><code>boolean alreadySpawnedAtPosition(Position pos)</code>: Given a Position pos, it will return whether some attacker was already spawned in that position in the current turn </li>
-  <li><code> Set<Integer> already_activated_attacker_ids</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
+  <li><code> Set{`<`}Integer{`>`} already_activated_attacker_ids</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
   <li><code>void setTarget(int attacker_id, int defender_id)</code>: Sets the target for Attacker with id=attacker_id as Defender with id=defender_id. If the defender_id is invalid, the simulator will handle that automatically and try to set the target which is at the nearest position to the Attacker</li>
   <li><code>activateAbility(int attacker_id)</code>: Activates the ability for Attacker with id=attacker_id. If the attacker_id is invalid it does nothing. throws an error if the id is not an int.</li>
   <li><code>void setTarget(Attacker attacker, Defender defender)</code>: Sets the target for Attacker(attacker) as Defender(defender). If the defender is invalid somehow, the simulator will handle that automatically and try to set the target which is at the nearest position to the Attacker </li>
