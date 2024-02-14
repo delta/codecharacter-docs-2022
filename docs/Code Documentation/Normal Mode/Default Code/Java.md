@@ -11,7 +11,7 @@ import java.util.List;
 
 // This is the function player has to fill
 // You can define any new functions here that you want
-public class Run {
+public class RunPvP {
 
     // Lets say I want to spawn an attacker of each of the type in one turn
     // and I want to use the Helpers.getAllValidSpawnPositions list as well. In
@@ -21,11 +21,11 @@ public class Run {
     // variable.
     private int lastSpawned;
 
-    public Run() {
+    public RunPvP() {
         this.lastSpawned = 0;
     }
 
-    public Game run(State state) {
+    public Game run(PvPState state) {
 
         // Always start by instantiating a Game class object
         Game game = new Game();
@@ -35,7 +35,7 @@ public class Run {
 
         // Get all the attackers and defenders in the game and store it
         List<Attacker> attackers = state.getAttackers();
-        List<Defender> defenders = state.getDefenders();
+        List<Attacker> opponentAttackers = state.getOpponentAttackers();
 
         // The function get_all_valid_spawn_positions() is a helper which will give us
         // the list of valid spawn positions in map.
@@ -47,59 +47,60 @@ public class Run {
         // we must convert to an indexable collection
         List<Position> allValidSpawnPositons = new ArrayList<Position>(Helpers.getAllValidSpawnPositions());
 
-        // If there's no defenders left,we can stop spawning and save up on coins,
-        // which are important for boosting game score
-        if (!defenders.isEmpty()) {
-            for (int typeId = 1; typeId <= Constants.NO_OF_ATTACKER_TYPES; typeId++) {
-                // Spawn the attacker of typeId at position
-                // allValidSpawnPositions[last_spawned]
+        for (int typeId = 1; typeId <= Constants.NO_OF_ATTACKER_TYPES; typeId++) {
+            // Spawn the attacker of typeId at position
+            // allValidSpawnPositions[last_spawned]
 
-                // There are two cases when you might be panalized
-                // - Spawning at invalid position
-                // - Spawning at position where you have already spawned one attacker
-                // in the same turn
-                //
-                // We have provided helpers to check just that
+            // There are two cases when you might be panalized
+            // - Spawning at invalid position
+            // - Spawning at position where you have already spawned one attacker
+            // in the same turn
+            //
+            // We have provided helpers to check just that
 
-                // game class will keep track of all your spawned positions for you and
-                // provides a helper method called already_spawned_at_position(Position)
-                // to check if you already spawned in the position
+            // game class will keep track of all your spawned positions for you and
+            // provides a helper method called already_spawned_at_position(Position)
+            // to check if you already spawned in the position
 
-                // Mostly a good practice to check with these two helpers before spawning,
-                // to save up on accidental penalties
-                //
+            // Mostly a good practice to check with these two helpers before spawning,
+            // to save up on accidental penalties
+            //
 
-                if (Helpers.isValidSpawnPosition(allValidSpawnPositons.get(lastSpawned)) &&
-                        !game.alreadySpawnedAtPosition(
-                                allValidSpawnPositons.get(lastSpawned))) {
+            if (Helpers.isValidSpawnPosition(allValidSpawnPositons.get(lastSpawned)) &&
+                    !game.alreadySpawnedAtPosition(
+                            allValidSpawnPositons.get(lastSpawned))) {
 
-                    // If lets say you had run out of coins left, the game will just ignore
-                    // the spawn
-                    game.spawnAttacker(typeId, allValidSpawnPositons.get(lastSpawned));
+                // If lets say you had run out of coins left, the game will just ignore
+                // the spawn
+                game.spawnAttacker(typeId, allValidSpawnPositons.get(lastSpawned));
 
-                    // This has the starting attributes for the attacker we are about to
-                    // spawn
-                    // For full information about the Attributes class refer the
-                    // documentation
-                    // This information can be used for strategizing
-                    Attributes attackersAttributes = Constants.ATTACKER_TYPE_ATTRIBUTES.get(typeId);
+                // This has the starting attributes for the attacker we are about to
+                // spawn
+                // For full information about the Attributes class refer the
+                // documentation
+                // This information can be used for strategizing
+                Attributes attackersAttributes = Constants.ATTACKER_TYPE_ATTRIBUTES.get(typeId);
 
-                    Position pos = allValidSpawnPositons.get(lastSpawned);
-                    game.log(String.format("To be spawned at Position(%d,%d)\n", pos.getX(), pos.getY()));
+                Position pos = allValidSpawnPositons.get(lastSpawned);
+                game.log(String.format("To be spawned at Position(%d,%d)\n", pos.getX(), pos.getY()));
 
-                    lastSpawned += 1;
-                    lastSpawned %= allValidSpawnPositons.size();
-                }
-
+                lastSpawned += 1;
+                lastSpawned %= allValidSpawnPositons.size();
             }
+
         }
 
         // Now lets say you always want to set the target for the attackers[0] to
         // defenders[0]
         // To do that you do
-        if (!attackers.isEmpty() && !defenders.isEmpty()) {
+        if (!attackers.isEmpty() && !opponentAttackers.isEmpty()) {
             // check if they are empty beforehand to be safe from unexpected errors
-            game.setTarget(attackers.get(0).getId(), defenders.get(0).getId());
+            game.setTarget(attackers.get(0).getId(), opponentAttackers.get(0).getId());
+            //lets say i want to activate the ability of the first attacker
+            //check if ability wasnt activated before to avoid getting penalized
+            if (!Game.already_activated_attacker_ids.contains(attackers.get(0).getId())) {
+                game.activateAbility(attackers.get(0).getId());
+            }
         }
 
         // Lets log all the spawned positions for this turn

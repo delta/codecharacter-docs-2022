@@ -43,6 +43,7 @@ import TabItem from "@theme/TabItem";
   <li><code>size_t get_id() </code></li>
   <li><code>size_t get_type()</code></li>
   <li><code>Position get_position()</code></li>
+  <li><code>size_t is_ability_active</code></li>
   </ul>
 
   </TabItem>
@@ -52,6 +53,7 @@ import TabItem from "@theme/TabItem";
   <li><code>id: int  </code></li>
   <li><code>type: AttackerType</code></li>
   <li><code>position: Position</code></li>
+  <li><code>is_ability_active: int</code></li>
   </ul>
   </TabItem>
   <TabItem value="Java" label="Java">
@@ -60,11 +62,12 @@ import TabItem from "@theme/TabItem";
   <li><code>int getHp()</code></li>
   <li><code>int getType()</code></li>
   <li><code>Position getPosition()</code></li>
+  <li><code>int is_ability_active</code></li>
   </ul>
   </TabItem>
 </Tabs>
 
-## State
+## PvPState
 
 <Tabs>
   <TabItem value="C++" label="C++" default>
@@ -99,7 +102,9 @@ import TabItem from "@theme/TabItem";
   <ul>
   <li><code>void spawn_attacker(size_t type_id, Position pos)</code>: Spawns Attacker of type type_id at Position pos </li>
   <li><code>bool already_spawned_at_position(Position pos)</code>: Given a Position pos, it will return whether some attacker was already spawned in that position in the current turn</li>
+  <li><code> std::set<size_t> already_activated_attacker_ids</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
   <li><code>void set_target(size_t attacker_id, size_t opponent_attacker_id)</code>: Sets the target for Attacker with id=attacker_id as Attacker with id=opponent_attacker_id. If the opponent_attacker_id is invalid, the simulator will handle that automatically and try to set the target which is at the nearest position to your Attacker</li>
+  <li><code>void activate_ability(size_t attacker_id)</code>: Activates the ability for the given attacker with id=attacker_id. If the attacker_id is invalid it does nothing.</li>
   <li><code>void set_target(const Attacker &attacker, const Attacker &opponent_atttacker)</code>: Sets the target for Attacker(attacker) as Atttacker(opponent_attacker). If the opponent_attacker is invalid somehow, the simulator will handle that automatically and try to set the target which is at the nearest position to your Attacker </li>
   <li><code>std::ostringstream &logr()</code>: Given a Game object(called game), you can do <code>game.logr(){`<<`}"Log This\n";</code> and it will be shown in the renderer logs when the game is being rendered </li>
   <li><code>const std::unordered_map{`<`}size_t, size_t{`>`} &get_player_set_targets()</code></li>
@@ -114,6 +119,8 @@ import TabItem from "@theme/TabItem";
   <li><code>spawn_attacker(type_id: int, position: Position)</code>: Spawns Attacker of type type_id at Position pos</li>
   <li><code>is_already_spawned_at_position(position: Position): bool</code>: Given a Position pos, it will return whether some attacker was already spawned in that position in the current turn</li>
   <li><code>set_target(attacker_id: int, opponent_attacker_id: int)</code>: Sets the target for Attacker with id=attacker_id as Attacker with id=opponent_attacker_id. If the opponent_attacker_id is invalid, the simulator will handle that automatically and try to set the target which is at the nearest position to your Attacker</li>
+  <li><code>already_activated_attacker_ids : set[int]</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
+  <li><code>activate_ability(attacker_id:int)</code>: Activates the ability for Attacker with id=attacker_id. If the attacker_id is invalid it does nothing. throws an error if the id is not an int.</li>
   <li><code>log(line: str)</code>:Given a Game object(called game), you can do <code>game.log("Log This\n")</code> and it will be shown in the renderer logs when the game is being rendered</li>
   <li><code>clear_log()</code> </li>
   <li><code>player_set_targets: Dict[int, int]</code> </li>
@@ -125,7 +132,9 @@ import TabItem from "@theme/TabItem";
   <ul>
   <li><code>void spawnAttacker(int type_id, Position pos)</code>: Spawns Attacker of type type_id at Position pos </li>
   <li><code>boolean alreadySpawnedAtPosition(Position pos)</code>: Given a Position pos, it will return whether some attacker was already spawned in that position in the current turn </li>
+  <li><code> Set<Integer> already_activated_attacker_ids</code>: Returns a set of attacker ids which had been activated till now. Its a static variable. Shouldnt be modified by the player , ideally a read only attribute</li>
   <li><code>void setTarget(int attacker_id, int opponent_attacker_id)</code>: Sets the target for Attacker with id=attacker_id as Attacker with id=opponent_attacker_id. If the opponent_attacker_id is invalid, the simulator will handle that automatically and try to set the target which is at the nearest position to your Attacker</li>
+  <li><code>activate_ability(attacker_id:int)</code>: Activates the ability for Attacker with id=attacker_id. If the attacker_id is invalid it does nothing. throws an error if the id is not an int.</li>
   <li><code>void setTarget(Attacker attacker, Attacker opponent_attacker)</code>: Sets the target for Attacker(attacker) as Attacker(opponent_attacker). If the opponent_attacker is invalid somehow, the simulator will handle that automatically and try to set the target which is at the nearest position to your Attacker </li>
   <li><code>void log(String s)</code>Given a Game object(called game), you can do <code>game.log("Log This\n")</code> and it will be shown in the renderer logs when the game is being rendered </li>
   <li><code>void clearLog()</code> </li>
@@ -169,6 +178,12 @@ This class stores the attributes for `Attacker`. This will be used as the value 
       <li>
         <code>unsigned is_aerial</code>
       </li>
+      <li>
+        <code>unsigned weight</code>
+      </li>
+      <li>
+        <code>unsigned ability_activation_cost</code>
+      </li>
     </ul>
   </TabItem>
   <TabItem value="Java" label="Java">
@@ -190,6 +205,12 @@ This class stores the attributes for `Attacker`. This will be used as the value 
       </li>
       <li>
         <code>int is_aerial</code>
+      </li>
+      <li>
+        <code>unsigned weight</code>
+      </li>
+      <li>
+        <code>unsigned ability_activation_cost</code>
       </li>
     </ul>
   </TabItem>

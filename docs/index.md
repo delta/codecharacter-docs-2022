@@ -8,7 +8,7 @@ sidebar_position: 1
 
 In a post-apocalyptic world, a group of skilled resistance fighters emerges to battle against a ruthless alien invasion. Among them are Ash, a resourceful scavenger, Vig, a fearless sniper, and Sam, a brilliant engineer. 
 
-They develop a unique code system to communicate their plans and outsmart the advanced surveillance of the aliens. Together, they embark on daring missions, utilizing their individual skills to navigate dangerous terrain, eliminate key targets, and disable security systems. As they progress, they face different types of alien adversaries and encounter deadly traps. In their final push, they must face the Xalorians' strongest guards at the heart of the alien stronghold, where they must outmaneuver and outfight them to deliver a crippling blow to the central power source. 
+They develop a unique code system to communicate their plans and outsmart the advanced surveillance of the aliens. Together, they embark on daring missions, utilizing their individual skills to navigate dangerous terrain, eliminate key targets, and disable security systems. As they progress, they face different types of alien adversaries and encounter deadly traps.
 
 The fate of humanity rests on their shoulders in this thrilling fight for survival.
 
@@ -48,13 +48,13 @@ On the left there is the sidebar, with multiple icons. Lets go through these one
 -   **Commits** - This page shows the commit history of map and code which you have saved.
 
 -   **BattleTV** - Your previous matches and their results. You can also watch the replay of the match.
-    - There are two pages - Normal and PvP. View the matches of each mode separately. 
+    - There are three pages - Normal,PvP and Daily Challenge. View the matches of each mode separately. 
 
--   **Stats** - Your previous matches and their Statistics, how many coins You've used or how much destruction is done by your code,
-    - all compared with the top player.
-On the top, the topbar contains three different icons that take you to different pages. These are -
+-   **Tutorials** - This takes you to the Tutorial mode, where you can practice playing the game.
 
--   **Tutorials** - This takes you to the Tutorial mode, where you caan practice playing the game.
+-   **Stats** - Your previous matches and their Statistics, how many coins You've used or how much destruction is done by your code, all compared with the top player.
+
+    On the top, the topbar contains three different icons that take you to different pages. These are -
 
 -   **Daily Challenge** - This icon takes you the daily challenge of the particular day.
 
@@ -72,6 +72,6 @@ And on the screen, you can see three partitions:
 
 ## Forum
 
-We also have a Discord forum where you can discuss or ask any of your doubts. Join [here](https://discord.gg/QcYMveUaGQ).
+We also have a Discord forum where you can discuss or ask any of your doubts. Join [here](https://discord.gg/2HNpvAQx5N).
 
 _** We hope you have a good time playing CodeCharacter. **_
